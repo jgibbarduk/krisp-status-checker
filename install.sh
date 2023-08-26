@@ -35,7 +35,7 @@ plistDestPath="$HOME/Library/LaunchAgents/com.devbytes.KrispStatusChecker.plist"
 echo "$plistContent" > "$plistDestPath"
 
 # Copy the Script to the installation path
-cp -f ./KrispStatusChecker.scpt $applescriptPath
+cp -f ./KrispStatusChecker.applescript $applescriptPath
 
 # Load the launch agent
 launchctl load "$plistDestPath"
